@@ -1,0 +1,9 @@
+loadrt anotherconstant
+loadrt threads name1=test-thread period1=500000
+addf anotherconstant.0 test-thread
+
+setp anotherconstant.0.value 10
+
+loadusr halmeter pin anotherconstant.0.out
+
+start
