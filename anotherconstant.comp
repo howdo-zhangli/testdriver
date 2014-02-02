@@ -41,7 +41,7 @@ int test_RIP() {
 	
 #ifndef WO_get_rtapi_config
 	get_rtapi_config(path, "RUN_IN_PLACE", 4);
-#elseif
+#else
 	snprintf(path, 4, "yes");
 #endif
 	
